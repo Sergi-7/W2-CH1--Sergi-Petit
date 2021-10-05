@@ -40,3 +40,16 @@ test("If a is true, and b is false, it should return false", () => {
   //Assert
   expect(result).toBe(expected);
 });
+
+test("If a is false, and b is false, it should return true", () => {
+  //Arrange
+  const a = false;
+  const b = false;
+  const expected = true;
+
+  //Act
+  const result = strictEquals(a, b);
+
+  //Assert
+  expect(result).toBe(expected);
+});
