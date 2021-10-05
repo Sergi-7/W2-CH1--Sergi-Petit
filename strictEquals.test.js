@@ -14,3 +14,16 @@ test("If a is 1, and b is 1 , it should return true", () => {
   //Assert
   expect(result).toBe(expected);
 });
+
+test("If a is 1, and b is '1' , it should return false", () => {
+  //Arrange
+  const a = 1;
+  const b = "1";
+  const expected = false;
+
+  //Act
+  const result = strictEquals(a, b);
+
+  //Assert
+  expect(result).toBe(expected);
+});
