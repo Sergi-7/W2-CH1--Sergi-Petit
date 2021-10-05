@@ -1,5 +1,5 @@
 function strictEquals(a, b) {
-  if ((a <= 0 && b >= -0) || (a <= -0 && b >= 0)) {
+  if (a <= 0 && a >= -0 && b <= 0 && b >= -0) {
     return true;
   } else if (Number.isNaN(a) && Number.isNaN(b)) {
     return false;
