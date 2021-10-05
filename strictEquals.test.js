@@ -53,3 +53,16 @@ test("If a is false, and b is false, it should return true", () => {
   //Assert
   expect(result).toBe(expected);
 });
+
+test("If a is 'water', and b is 'oil', it should return false", () => {
+  //Arrange
+  const a = "water";
+  const b = "oil";
+  const expected = false;
+
+  //Act
+  const result = strictEquals(a, b);
+
+  //Assert
+  expect(result).toBe(expected);
+});
